@@ -1,0 +1,45 @@
+h1{ text-align: center;}
+
+#Heading-section-top{
+    color: rgb(37, 165, 37);
+}
+
+.font-color-pink{
+    color: pink;
+}
+
+.font-size-10{
+    font-size: 15rem;
+}
+
+.roboto-thin {
+    font-family: "Handlee", cursive;
+    font-weight: 100;
+    font-style: italics;
+    text-indent: 5%;
+    letter-spacing: 0.2cm;
+    line-height: 5%;
+    word-spacing: 2%;
+}
+
+a:link{
+    color:blueviolet
+}
+a:hover{
+    color:brown
+}
+
+a:link, a:visited {
+    background-color: antiquewhite;
+    color: black;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+@media (max-width: 576px) {
+    body {
+      background-color: lightblue;
+    }
+}
