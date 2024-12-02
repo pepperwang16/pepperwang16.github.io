@@ -2,57 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta viewport="width=device-width, initial-scale=1.0">
-    <title>My Skills - Pepper Wang</title>
-    <link rel="stylesheet" href="Assets/CSS/style.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills</title>
+    <link rel="stylesheet" href="Assets/CSS/style.css">
 </head>
 <body>
     <header>
-        <img src="Assets/IMG/homebg.jpg" alt="Background" class="background-image" style="width:100%; height:auto;">
-            <h1>My Skills</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="About.html">About Me</a>
-            <a href="research.html">My Research</a>
-            <a href="design.html">My UX Design</a>
-            <a href="skills.html" class="active">My Skills</a>
-            <a href="contact.html">Contact Me</a>
-        </nav>
+        <div class="menu">
+            <button>Menu</button>
+            <ul class="menu-items">
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="design.html">Design</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </header>
-    <main>
-        <section id="skills" class="section">
-            <div class="about-container">
-                <div class="about-image">
-                    <img src="Assets/IMG/skills.jpg" alt="Pepper Wang" style="width:100%; height:auto;">
+    <section class="skills">
+        <h1 class="section-title">My Skills</h1>
+        <div class="skills-container">
+            <!-- Professional Skills -->
+            <div class="skill-item">
+                <div class="chart">
+                    <div class="pie professional"></div>
                 </div>
-            <h1>Skills List</h1>
-            <h2>Technical Skills</h2>
-            <ul>
-                <li>Python</li>
-                <li>R</li>
-                <li>SQL</li>
-                <li>Figma</li>
-                <li>HTML</li>
-            </ul>
-            <h2>Professional Skills</h2>
-            <ul>
-                <li>Data Collection & Analysis</li>
-                <li>User Experience Design</li>
-                <li>Experimental Design</li>
-                <li>Predictive Modeling</li>
-                <li>Literature Reviews</li>
-                <li>Project Management</li>
-            </ul>
-            <h2>Languages</h2>
-            <ul>
-                <li>Mandarin (Native)</li>
-                <li>English (Fluent)</li>
-                <li>Cantonese (Novice)</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>© 2024 Pepper Wang. All rights reserved.</p>
-    </footer>
+                <h2>Professional Skills</h2>
+                <ul class="legend">
+                    <li><span style="background-color: #436e4d;"></span> Data Collection & Analysis</li>
+                    <li><span style="background-color: #88b68c;"></span> User Experience Design</li>
+                    <li><span style="background-color: #cfe3d8;"></span> Experimental Design</li>
+                    <li><span style="background-color: #dfe9e3;"></span> Predictive Modeling</li>
+                </ul>
+            </div>
+            <!-- Languages -->
+            <div class="skill-item">
+                <div class="chart">
+                    <div class="pie languages"></div>
+                </div>
+                <h2>Languages</h2>
+                <ul class="legend">
+                    <li><span style="background-color: #436e4d;"></span> Mandarin</li>
+                    <li><span style="background-color: #88b68c;"></span> English</li>
+                    <li><span style="background-color: #cfe3d8;"></span> Cantonese</li>
+                </ul>
+            </div>
+            <!-- Technical Skills -->
+            <div class="skill-item">
+                <div class="chart">
+                    <div class="pie technical"></div>
+                </div>
+                <h2>Technical Skills</h2>
+                <ul class="legend">
+                    <li><span style="background-color: #436e4d;"></span> Python</li>
+                    <li><span style="background-color: #88b68c;"></span> R</li>
+                    <li><span style="background-color: #cfe3d8;"></span> SQL</li>
+                    <li><span style="background-color: #dfe9e3;"></span> Figma</li>
+                    <li><span style="background-color: #e8f0eb;"></span> HTML</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
