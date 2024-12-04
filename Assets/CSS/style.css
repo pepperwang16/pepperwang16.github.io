@@ -466,3 +466,85 @@ p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* General Responsive Styles */
+@media (max-width: 1024px) {
+    .projects-container, .skills-container, .contact-info {
+        flex-direction: column; /* Stack items vertically for smaller screens */
+        gap: 15px; /* Adjust spacing */
+    }
+
+    .project-item, .skill-item, .contact-item {
+        width: 90%; /* Reduce width to fit smaller screens */
+        margin: 0 auto; /* Center items */
+    }
+
+    .chart, .project-image {
+        width: 80%; /* Resize charts and images */
+        max-width: 300px;
+    }
+
+    .text-content, .image-content, .content-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .text-content h1, .text-content h2 {
+        font-size: 1.8rem; /* Scale down headers */
+    }
+
+    .text-content p {
+        font-size: 0.9rem; /* Scale down paragraph text */
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Add padding for smaller screens */
+    }
+
+    .menu button {
+        padding: 8px 12px; /* Reduce button size */
+    }
+
+    .menu-items li {
+        padding: 8px; /* Adjust dropdown menu padding */
+    }
+
+    .project-item, .skill-item {
+        width: 100%; /* Use full width for smaller devices */
+    }
+
+    .section-title {
+        font-size: 2rem; /* Scale down section titles */
+    }
+
+    .chart, .project-image {
+        max-width: 250px; /* Adjust media size */
+    }
+
+    .contact-info {
+        gap: 10px; /* Reduce spacing for contact items */
+    }
+}
+
+@media (max-width: 480px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-item button, .text-section button {
+        font-size: 0.8rem; /* Reduce button text size */
+        padding: 8px 16px; /* Adjust button padding */
+    }
+
+    .chart, .project-image {
+        max-width: 200px; /* Resize for very small screens */
+    }
+
+    .text-content, .image-content {
+        padding: 10px; /* Add padding for better spacing */
+    }
+}
