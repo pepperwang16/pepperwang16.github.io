@@ -65,6 +65,19 @@ header {
     color: #436e4d;
 }
 
+.site-footer {
+    background-color: white; /* Footer background color */
+    color: #333; /* Text color */
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
 /* Intro Section */
 .intro {
     display: flex;
