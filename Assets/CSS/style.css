@@ -32,9 +32,7 @@ header {
     border-radius: 5px;
     cursor: pointer;
 }
-.menu:hover .menu-items {
-    display: block;
-}
+
 .menu-items {
     display: none;
     position: absolute;
@@ -43,6 +41,21 @@ header {
     top: 40px;
     right: 0;
     z-index: 1000;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.menu:hover .menu-items {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.2s; /* Add delay for hover-out */
+}
+
+.menu-items:hover {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.2s; /* Extend time for hover-out */
 }
 .menu-items li {
     padding: 10px;
