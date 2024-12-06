@@ -48,14 +48,14 @@ header {
     display: block;
     opacity: 1;
     visibility: visible;
-    transition-delay: 0.2s; /* Add delay for hover-out */
+    transition-delay: 0.5s; /* Add delay for hover-out */
 }
 
 .menu-items:hover {
     display: block;
     opacity: 1;
     visibility: visible;
-    transition-delay: 0.2s; /* Extend time for hover-out */
+    transition-delay: 0.5s; /* Extend time for hover-out */
 }
 .menu-items li {
     padding: 10px;
