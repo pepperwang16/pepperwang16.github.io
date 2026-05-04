@@ -574,3 +574,14 @@ p {
         padding: 10px; /* Add padding for better spacing */
     }
 }
+
+.research-intro {
+    max-width: 850px;
+    margin: 0 auto;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+.research-intro p {
+    margin-bottom: 1.4rem;
+}
